@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Файл переименован в index.html для удобства хостинга -->
+    <title>Портфолио | Яхновец А. Д.</title>
+    <!-- Загрузка Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Загрузка шрифта Inter (для основного текста) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Загрузка шрифта Playfair Display (для заголовков) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Применение шрифтов */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Очень светлый серый/бежевый фон */
+            color: #1e293b; /* Тёмно-синий/сланец для текста */
+        }
+        .header-font {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Акцентный цвет (Терракотовый) */
+        .accent-bg {
+            background-color: #994D1C; /* Глубокий терракотовый */
+        }
+        .accent-text {
+            color: #994D1C;
+        }
+        .text-shadow-custom {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+        /* Адаптивный контейнер */
+        .container-padding {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        @media (min-width: 640px) {
+            .container-padding {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- A. Шапка / Hero Section -->
+    <header class="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
+        <!-- Фоновое изображение (ВАШЕ ФОТО) -->
+        <!-- ЗАМЕНИТЕ АДРЕС ВНУТРИ URL('...') НА ПРЯМУЮ ССЫЛКУ К ВАШЕМУ ФОТО -->
+        <div class="absolute inset-0 bg-cover bg-center" 
+             style="background-image: url('https://example.com/your-main-photo.jpg'); filter: grayscale(40%) opacity(80%);">
+        </div>
+        
+        <!-- Слой для контраста -->
+        <div class="absolute inset-0 bg-slate-900 opacity-60"></div>
+
+        <!-- Контент шапки -->
+        <div class="relative text-center text-white p-6 container-padding">
+            <h1 class="header-font text-4xl sm:text-6xl md:text-7xl font-bold mb-2 leading-tight text-shadow-custom">
+                Яхновец Анастасия Дмитриевна
+            </h1>
+            <p class="text-xl sm:text-2xl font-light mb-6 uppercase tracking-wider border-b-2 border-amber-500 inline-block pb-1">
+                Студент-психолог | Портфолио педагогической практики
+            </p>
+            <p class="max-w-3xl mx-auto text-lg sm:text-xl font-light italic">
+                Исследую мир детской психологии через практику. Здесь я делюсь опытом, наблюдениями и открытиями, сделанными во время педагогической практики.
+            </p>
+        </div>
+    </header>
+
+    <!-- B. Фотогалерея с практики (Ключевой блок) -->
+    <section id="gallery" class="py-16 container-padding max-w-6xl mx-auto">
+        <h2 class="header-font text-3xl md:text-4xl font-bold text-center mb-10 accent-text">
+            Практика: моменты взаимодействия
+        </h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- Фото 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl">
+                <!-- ЗАМЕНИТЕ АДРЕС ВНУТРИ SRC="..." НА ПРЯМУЮ ССЫЛКУ К ФОТО 1 -->
+                <img src="https://example.com/practice-photo-1.jpg" alt="Фотография взаимодействия с младшей группой" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <p class="font-semibold text-sm mb-2 accent-text">Момент 1: Групповая динамика</p>
+                    <p class="text-sm text-gray-700">Наблюдение за групповой динамикой в младшем классе во время арт-терапевтического занятия. Фиксация невербальных сигналов, указывающих на лидеров и аутсайдеров, что важно для дальнейшей коррекционной работы.</p>
+                </div>
+            </div>
+
+            <!-- Фото 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl">
+                <!-- ЗАМЕНИТЕ АДРЕС ВНУТРИ SRC="..." НА ПРЯМУЮ ССЫЛКУ К ФОТО 2 -->
+                <img src="https://example.com/practice-photo-2.jpg" alt="Фотография проведения индивидуальной консультации" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <p class="font-semibold text-sm mb-2 accent-text">Момент 2: Индивидуальная беседа</p>
+                    <p class="text-sm text-gray-700">Проведение структурированной беседы с подростком по теме профориентации. Применение методики "Мои сильные стороны" для повышения самооценки и осознанного выбора дальнейшего пути.</p>
+                </div>
+            </div>
+
+            <!-- Фото 3 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl">
+                <!-- ЗАМЕНИТЕ АДРЕС ВНУТРИ SRC="..." НА ПРЯМУЮ ССЫЛКУ К ФОТО 3 -->
+                <img src="https://example.com/practice-photo-3.jpg" alt="Фотография работы с документацией" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <p class="font-semibold text-sm mb-2 accent-text">Момент 3: Анализ данных</p>
+                    <p class="text-sm text-gray-700">Работа с протоколами наблюдения и диагностическими картами. Отработка навыка систематизации качественных данных для формирования объективного психологического заключения по случаю.</p>
+                </div>
+            </div>
+
+            <!-- Фото 4 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl">
+                <!-- ЗАМЕНИТЕ АДРЕС ВНУТРИ SRC="..." НА ПРЯМУЮ ССЫЛКУ К ФОТО 4 -->
+                <img src="https://example.com/practice-photo-4.jpg" alt="Фотография проведения тренинга для учителей" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <p class="font-semibold text-sm mb-2 accent-text">Момент 4: Просветительская работа</p>
+                    <p class="text-sm text-gray-700">Участие в мини-тренинге для педагогического коллектива на тему профилактики эмоционального выгорания. Разработка короткого блока о важности самоподдержки для специалистов помогающих профессий.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- D. Выводы и рефлексия -->
+    <section id="reflection" class="py-16 bg-slate-100 container-padding">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="header-font text-3xl md:text-4xl font-bold text-center mb-10 accent-text">
+                Профессиональные инсайты и выводы
+            </h2>
+            
+            <div class="space-y-6 text-lg text-gray-800 leading-relaxed bg-white p-6 sm:p-8 rounded-xl shadow-inner">
+                <p>
+                    Практика позволила мне увидеть существенный разрыв между идеально выстроенной теорией и живой, непредсказуемой реальностью школьного класса. Я осознала, насколько важно не придерживаться плана занятия слепо, а быть готовой к гибким, моментальным изменениям в зависимости от эмоционального состояния группы и индивидуальных реакций учащихся. Это требует не просто знаний методик, но и развития профессиональной интуиции и высокого уровня саморегуляции, что является моей ключевой точкой роста как будущего специалиста.
+                </p>
+                <p>
+                    Самым ценным открытием стала работа с «трудным» подростком, демонстрирующим протестное поведение. Я убедилась, что за внешним сопротивлением и деструктивным поведением часто стоит острая, неудовлетворенная потребность во внимании, признании и безопасности. Мой изначальный подход, ориентированный на контроль, оказался неэффективным. Я поняла, что эта ситуация требует от психолога прежде всего глубокого терпения, эмпатии и способности увидеть за "маской" ребенка, а не попытки немедленно подавить симптом. Успешное установление доверительного контакта стало для меня доказательством силы недирективного подхода.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- F. Контакты -->
+    <footer id="contacts" class="py-12 accent-bg text-white">
+        <div class="max-w-4xl mx-auto text-center container-padding">
+            <h2 class="header-font text-3xl font-bold mb-6">Для связи</h2>
+            
+            <div class="text-xl space-y-3 font-light">
+                <p><strong>Университет:</strong> БГПУ имени Максима Танка, Институт психологии</p>
+                <p><strong>Курс и Группа:</strong> 4 курс</p>
+                <p><strong>Студент:</strong> Яхновец Анастасия Дмитриевна</p>
+                <p><strong>Email:</strong> <a href="mailto:anastasiya.yakhnovets@example.com" class="underline hover:text-amber-200 transition duration-200">anastasiya.yakhnovets@example.com</a></p>
+            </div>
+            
+            <p class="mt-8 text-sm opacity-80">
+                Портфолио создано для академической аттестации педагогической практики.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
