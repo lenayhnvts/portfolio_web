@@ -3,13 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Файл переименован в index.html для удобства хостинга -->
     <title>Портфолио | Яхновец А. Д.</title>
-    <!-- Загрузка Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Загрузка шрифта Inter (для основного текста) -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <!-- Загрузка шрифта Playfair Display (для заголовков) -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     
     <style>
@@ -47,18 +43,13 @@
 </head>
 <body>
 
-    <!-- A. Шапка / Hero Section -->
     <header class="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
-        <!-- Фоновое изображение (ВАШЕ ФОТО) -->
-        <!-- ЗАМЕНИТЕ АДРЕС ВНУТРИ URL('...') НА ПРЯМУЮ ССЫЛКУ К ВАШЕМУ ФОТО -->
         <div class="absolute inset-0 bg-cover bg-center" 
              style="background-image: url('./background_photo111.jpg'); filter: grayscale(40%) opacity(80%);">
         </div>
         
-        <!-- Слой для контраста -->
         <div class="absolute inset-0 bg-slate-900 opacity-60"></div>
 
-        <!-- Контент шапки -->
         <div class="relative text-center text-white p-6 container-padding">
             <h1 class="header-font text-4xl sm:text-6xl md:text-7xl font-bold mb-2 leading-tight text-shadow-custom">
                 Яхновец Анастасия Дмитриевна
@@ -72,44 +63,36 @@
         </div>
     </header>
 
-    <!-- B. Фотогалерея с практики (Ключевой блок) -->
     <section id="gallery" class="py-16 container-padding max-w-6xl mx-auto">
         <h2 class="header-font text-3xl md:text-4xl font-bold text-center mb-10 accent-text">
             Практика: моменты взаимодействия
         </h2>
         
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
             
-            <!-- Фото 1 -->
             <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl flex flex-col">
-                <!-- ЗАМЕНИТЕ АДРЕС ВНУТРИ SRC="..." НА ПРЯМУЮ ССЫЛКУ К ФОТО 1 -->
-                <img src="./photo_1.jpg" alt="Взаимодействие с младшей группой" class="w-full h-48 object-cover">
+                <img src="./photo_1.jpg" alt="Взаимодействие с младшей группой" class="w-full h-64 object-cover">
                 <div class="p-4 flex-grow">
                     <p class="font-semibold text-sm mb-2 accent-text">Взаимодействие с младшей группой</p>
-              </div>
+                </div>
             </div>
 
-            <!-- Фото 2 -->
             <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl flex flex-col">
-                <!-- ЗАМЕНИТЕ АДРЕС ВНУТРИ SRC="..." НА ПРЯМУЮ ССЫЛКУ К ФОТО 2 -->
-                <img src="./photo_2.jpg" alt="Работа с подростками" class="w-full h-48 object-cover">
+                <img src="./photo_2.jpg" alt="Работа с подростками" class="w-full h-64 object-cover">
                 <div class="p-4 flex-grow">
                     <p class="font-semibold text-sm mb-2 accent-text">Работа с подростками: групповая дискуссия</p>
+                </div>
             </div>
 
-            <!-- Фото 3 -->
             <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl flex flex-col">
-                <!-- ЗАМЕНИТЕ АДРЕС ВНУТРИ SRC="..." НА ПРЯМУЮ ССЫЛКУ К ФОТО 3 -->
-                <img src="./photo_3.jpg" alt="Психологическое просвещение" class="w-full h-48 object-cover">
+                <img src="./photo_3.jpg" alt="Психологическое просвещение" class="w-full h-64 object-cover">
                 <div class="p-4 flex-grow">
                     <p class="font-semibold text-sm mb-2 accent-text">Психологическое просвещение</p> 
                 </div>
             </div>
 
-            <!-- Фото 4 -->
             <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl flex flex-col">
-                <!-- ЗАМЕНИТЕ АДРЕС ВНУТРИ SRC="..." НА ПРЯМУЮ ССЫЛКУ К ФОТО 4 -->
-                <img src="./photo_4.jpg" alt="Интерактивное занятие" class="w-full h-48 object-cover">
+                <img src="./photo_4.jpg" alt="Интерактивное занятие" class="w-full h-64 object-cover">
                 <div class="p-4 flex-grow">
                     <p class="font-semibold text-sm mb-2 accent-text">Интерактивное занятие</p>
                 </div>
@@ -118,7 +101,6 @@
         </div>
     </section>
 
-    <!-- D. Выводы и рефлексия -->
     <section id="reflection" class="py-16 bg-slate-100 container-padding">
         <div class="max-w-4xl mx-auto">
             <h2 class="header-font text-3xl md:text-4xl font-bold text-center mb-10 accent-text">
@@ -133,7 +115,6 @@
         </div>
     </section>
 
-    <!-- F. Контакты -->
     <footer id="contacts" class="py-12 accent-bg text-white">
         <div class="max-w-4xl mx-auto text-center container-padding">
             <h2 class="header-font text-3xl font-bold mb-6">Для связи</h2>
@@ -142,7 +123,6 @@
                 <p><strong>Университет:</strong> БГПУ имени Максима Танка, Институт психологии</p>
                 <p><strong>Курс и Группа:</strong> 4 курс</p>
                 <p><strong>Студент:</strong> Яхновец Анастасия Дмитриевна</p>
-                <p><strong>Email:</strong> <a href="mailto:anastasiya.yakhnovets@example.com" class="underline hover:text-amber-200 transition duration-200">anastasiya.yakhnovets@example.com</a></p>
             </div>
             
             <p class="mt-8 text-sm opacity-80">
